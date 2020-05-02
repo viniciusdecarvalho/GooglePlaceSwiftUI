@@ -12,7 +12,7 @@ class Settings: ObservableObject {
     @Published var baseUrl = "https://maps.googleapis.com/maps/api/place"
     @Published var output = "json"
     @Published var language = "pt-BR"
-    @Published var key = "AIzaSyCpUP6r0j-JIxt49JovEp3kEmaOQdTr1CE"//"AIzaSyDVgGnQG25t16jTpnpa7OlWhZR4jMlhGAs"
+    @Published var key = ""
     
     lazy var placeParams: SearchParam = {
         return SearchParam(baseUrl: self.baseUrl, output: self.output, language: self.language, key: self.key)
